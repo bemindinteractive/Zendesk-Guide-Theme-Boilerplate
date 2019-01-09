@@ -1,0 +1,78 @@
+/* anim classes */
+.fadeindowntop{
+  -webkit-animation-name: fadeInDownTopt;
+  animation-name: fadeInDownTopt;
+  animation-delay: .4s;
+  animation-duration: .6s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.08, .705, .005, .99);
+}
+
+.animation-base, .o1{
+  //opacity: 1;
+  //transform: translateY(0);
+  /*transition: opacity 500ms cubic-bezier(.08, .705, .005, .99),
+              transform 400ms cubic-bezier(.08, .705, .005, .99);
+  transition-delay: 100ms !important;
+  perspective: 10px;*/
+  display: block;
+}
+
+.animation-base--setup, .o0{
+  //transform: translateY(60px);
+  //opacity: 0;
+}
+
+.animation-base--delay-short{
+}
+
+.animation-base--delay-1{
+  display: block;
+}
+
+.animation-base--delay-2{
+}
+
+
+.ol{
+  transform: translateY(0) !important;
+}
+.od01{
+  transition-delay: 0.1s !important;
+}
+.odcard1{
+  transition-delay: .2s !important;
+}
+.odcard2{
+  transition-delay: .26s !important;
+}
+.odcard3{
+  transition-delay: .3s !important;
+}
+.odcard4{
+  transition-delay: .32s !important;
+}
+.odcard5{
+  transition-delay: .335s !important;
+}
+.odcard6{
+  transition-delay: .34s !important;
+}
+.odpresscard1{
+  transition-delay: 1.2s !important;
+}
+.odpresscard2{
+  transition-delay: 1.26s !important;
+}
+.odpresscard3{
+  transition-delay: 1.3s !important;
+}
+.odpresscard4{
+  transition-delay: 1.32s !important;
+}
+.odpresscard5{
+  transition-delay: 1.335s !important;
+}
+.odpresscard6{
+  transition-delay: 1.34s !important;
+}

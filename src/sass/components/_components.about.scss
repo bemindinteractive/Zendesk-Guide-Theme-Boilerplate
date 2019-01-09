@@ -1,0 +1,244 @@
+
+/*about*/
+.about-intro{
+  margin-top: $spacing-big;
+  margin-bottom: $spacing-big;
+}
+.about-intro h1{
+  margin-bottom: $base-spacing-x10;
+  position: relative;
+  overflow: hidden;
+}
+.about-intro div{
+
+}
+.about-intro h1 span {
+  //position: absolute;
+}
+/*.banking-universe .h2container h2 {
+  margin-bottom: 0px;
+  position: relative;
+  //height: 50px;
+}*/
+.banking-universe .h2container h2 div {
+  overflow: hidden;
+  //position: absolute;
+}
+.about-founders .h2container {
+  margin-bottom: 40px;
+}
+.about-founders .h2container h2 {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+.about-founders .h2container h2 span {
+  position: absolute;
+}
+/*.about-ecosystem .h2container {
+  margin-bottom: 40px;
+}*/
+.about-ecosystem .h2container h2 {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+.about-ecosystem .h2container h2 span {
+  position: absolute;
+}
+
+.about-fullwidth-img{
+  padding-top: 46%;
+  margin-bottom: $spacing-big;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-animation-color{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  opacity: 1;
+  background-color: #0046AD;
+}
+
+.image-animation-figure{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-fullwidth-color-container{
+
+}
+.about-fullwidth-image-container{
+  background-image: url("../assets/images/about-photo.png");
+}
+.about-second-img{
+  position: relative;
+  overflow: hidden;
+}
+.about-second-color-container{
+
+}
+.about-second-image-container{
+
+  background-image: url("../assets/images/about-second-photo.png");
+}
+
+.double-article,
+.banking-universe,
+.about-founders,
+.about-ecosystem,
+.about-fintechdistrict{
+  margin-bottom: $spacing-big;
+}
+.wrapper-line {
+    border: 1px solid color($base, lighter);
+    border-radius: 4px;
+    width: 100%;
+    padding: $base-spacing-x8 $base-spacing-x6 $base-spacing-x8 $base-spacing-x6;
+    position: relative;
+}
+
+.about-fintechdistrict-title{
+  margin-bottom: $spacing-normal;
+}
+.about-fintechdistrict .h2container {
+  margin-bottom: $spacing-normal;
+}
+.about-fintechdistrict .h2container h2 {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.about-fintechdistrict .h2container h2 span {
+  position: absolute;
+}
+
+.about-careers{
+  margin-bottom: $spacing-big;
+}
+.about-careers .h2container h2 {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.about-careers .h2container h2 span {
+  position: absolute;
+}
+.about-ecosystem-filter{
+  border-top: #D1D9DF 1px solid;
+  border-bottom: #D1D9DF 1px solid;
+  padding: 18px 0 14px 0;
+  margin-top: 10px;
+
+}
+.about-ecosystem-filter ul{
+  margin-bottom: 0;
+  margin-block-start: 0;
+  margin-block-start: 0;
+}
+.about-ecosystem-filter ul li{
+  float: left;
+  color: #D1D9DF;
+  font-size: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all .2s cubic-bezier(.08, .705, .005, .99);
+}
+.about-ecosystem-filter ul li:hover{
+  color: #0046AD;
+}
+.about-ecosystem-logo-list .row .col-md-3.logo{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.about-ecosystem-logo-list .row .col-md-3.logo img{
+  width: 80%;
+  height: 70%;
+  max-height: 74px;
+}
+.about-ecosystem-logo-list{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.about-ecosystem-filter ul li.press-tab-active{
+  color: #0046AD;
+  position: relative;
+}
+.about-ecosystem-filter ul li:after{
+  content: '';
+  width: 0px;
+  border-bottom: 1px #0046AD solid;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about-ecosystem-filter ul li.press-tab-active:after{
+  width: 180px;
+  transition: all .2s cubic-bezier(.08, .705, .005, .99);
+}
+#about-logo-sella{
+  margin-top: 14px;
+}
+.about-founders-list-block > div > .row > div{
+  margin-bottom: 30px;
+}
+.about-founders-list-block .about-founders-wrapper{
+  text-align: center;
+  height: 100%;
+}
+.about-founders-list-block .about-founders-wrapper h3{
+  margin-bottom: 28px;
+  margin-top: 8px;
+}
+.psd2-wrapper{
+  padding: 50px;
+}
+.about-founders-list-block{
+  margin-top: $spacing-normal;
+}
+.psdgateway-list-block{
+  margin-top: 32px;
+}
+.about-founders-list-block .row{
+  margin-bottom: 24px;
+}
+.founder-logo-container{
+  height: 100px;
+  align-itemss: center;
+}
+
+@media only screen and (max-width : 576px) {
+	.about-fullwidth-img {
+		padding-top: 70%;
+	}
+	.about-second-img{
+		margin-top: 80px;
+		padding-top: 70%;
+	}
+}
+
+@media only screen and (max-width : 1199px){
+	.about-ecosystem-filter ul li {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,360 @@
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Content section and grid object
+// Last update: 23/03/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+.o-section {
+  @include clearfix;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+
+  @media screen and (break(medium)) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    //margin-top: $base-spacing-x15;
+    //padding: $base-spacing-x10 0;
+  }
+
+  .c-navigation__start + &,
+  .c-navigation + & {
+    margin-top: auto;
+    padding-top: $base-spacing-x10;
+
+    @media screen and (break(medium)) {
+      padding: $base-spacing-x10 0;
+    }
+  }
+}
+
+.c-navigation__start + .o-section > .o-section__area {
+  margin-top: 3vh;
+}
+
+.o-section--display {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &.o-section--display_landing {
+    min-height: inherit;
+    max-width: $wrapper-max-width;
+    margin: 0 auto;
+  }
+
+  @media screen and (break(medium)) {
+    flex-direction: row;
+  }
+}
+
+.o-section--display__white {
+  background-color: $white;
+}
+
+.o-section--display__blue {
+  background-color: color($blue, lightest);
+
+  .c-herobanner + & {
+    margin-top: 0;
+  }
+
+  .c-feature-box + & {
+    margin-top: 0;
+  }
+}
+
+.o-section--display__grey {
+  background-color: $super-light-grey;
+
+  .c-herobanner + & {
+    margin-top: 0;
+  }
+}
+
+.o-section--height-medium {
+  overflow: hidden;
+  @media screen and (break(medium)) {
+    height: 478px;
+
+    .msie & {
+      padding: inherit;
+    }
+  }
+}
+
+.o-section--height-big {
+  overflow: hidden;
+  @media screen and (break(medium)) {
+    height: 616px;
+
+    .msie & {
+      padding: inherit;
+    }
+  }
+}
+
+.o-section--medium {
+  overflow: hidden;
+  @media screen and (break(medium)) {
+    .o-section__area--content {
+      padding: $base-spacing-x10 0 $base-spacing-x15;
+    }
+    .msie & {
+      padding: inherit;
+    }
+  }
+}
+
+.o-section--height-300 {
+  overflow: hidden;
+  @media screen and (break(medium)) {
+    max-height: 300px;
+    padding: 6vw;
+  }
+}
+
+.o-section__area {
+  @media screen and (break(medium)) {
+    display: flex;
+    //flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .o-section--1 & {
+      @include grid(12);
+    }
+
+    .o-section--2 & {
+      //@include grid(4, $offset: 1);
+      @include grid(6);
+    }
+
+    .o-section--3 & {
+      @include grid(4);
+    }
+  }
+}
+
+//center banner in div
+.o-section.o-section--1 {
+  justify-content: center;
+}
+
+.o-section__area--content {
+  order: 2;
+  width: 90%;
+  padding: $base-spacing-x4 0;
+  margin: $base-spacing-x2;
+
+
+  @media screen and (break(medium)) {
+    //padding: $base-spacing-x10 0;
+    @include grid(4, $columns: 6, $offset: 1, $align: center);
+    order: inherit;
+
+    &.remove-paddings {
+      padding: 0;
+    }
+
+    &.padding-only-top {
+      padding: $base-spacing-x10 0 0 0;
+    }
+
+    &.padding-top-bottom {
+      padding: $base-spacing-x15 0;
+    }
+  }
+
+  &.o-section__area--content__gray {
+    background-color: color($midnight, lightest);
+  }
+
+  .o-section__area--link {
+    color: color($blue, default);
+    font-size: 18px;
+    line-height: 24px;
+
+    .fa {
+      margin-right: $base-spacing;
+    }
+  }
+
+  h3 {
+    max-width: 100%; //IE compatibilty
+  }
+
+  .o-section__area--50percent {
+    @media screen and (break(medium)) {
+      width: 65%;
+    }
+  }
+
+  p {
+    //font-size: $font-size-small;
+    font-weight: $font-weight-light;
+    line-height: 29px;
+    color: color($midnight, light);
+  }
+
+  ul {
+    padding-left: $base-spacing-x2;
+    li {
+      font-size: $font-size-small;
+      font-weight: $font-weight-light;
+      line-height: 29px;
+      color: color($midnight, light);
+    }
+  }
+
+}
+
+.o-section__area--image {
+  //margin: 8vw;
+  order: 1;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: $base-spacing-x4 0;
+
+  @media screen and (break(small)) {
+    //margin: 6vw;
+    //margin-top: -3vw;
+    order: inherit;
+    width: 50%;
+    margin: 0;
+  }
+
+  & &-hide {
+    @media screen and (break(medium)) {
+      display: none;
+    }
+  }
+}
+
+.o-section__area--features {
+  padding: 4vw;
+  order: 1;
+
+  @media screen and (break(medium)) {
+    padding: 3vw;
+    order: initial;
+  }
+}
+
+.o-section__image {
+  display: block;
+  width: 100%;
+
+  .msie & {
+    height: 100%; //IE
+  }
+
+  .o-section--height-422 & {
+    max-height: 460px;
+    width: auto;
+    .msie & {
+      margin-top: -20px;
+    }
+  }
+
+  .o-section--height-616 & {
+    overflow: hidden;
+
+    @media screen and (break(medium)) {
+      max-height: 666px;
+      width: initial;
+
+      .msie & {
+        //IE
+        height: 666px;
+        width: 666px;
+        margin-top: -25px;
+      }
+    }
+  }
+
+  .o-section-width-90 & {
+    width: 90%;
+
+    @media screen and (break(small)) {
+      max-width: 70%;
+      height: 90%; //IE compatibility
+    }
+
+    @media screen and (break(medium)) {
+      max-width: 90%;
+      height: 90%; //IE compatibility
+    }
+  }
+  //transform: scale(0.5);
+}
+
+.o-section__image--features {
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  max-width: 40%;
+
+  //transform: scale(0.5);
+}
+
+.o-section--1 .o-section__content--features {
+  display: inline-block;
+  text-align: center;
+  margin: 0 $base-spacing-x2;
+
+  @media screen and (break(medium)) {
+    order: initial;
+    width: 65%;
+  }
+
+  @media screen and (break(large)) {
+    order: initial;
+    width: 57%;
+  }
+}
+
+.o-section__testimonial {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.mobile-container {
+  width: 95%;
+  @media screen and (break(medium)) {
+    width: 100%;
+  }
+}
+
+.security-background__left {
+  @media screen and (break(medium)) {
+    background-image: url($baseurl+"/assets/images/index_guaranteed-payment.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: auto 103%;
+  }
+}
+
+.security-background__right {
+  @media screen and (break(medium)) {
+    background-image: url($baseurl+"/assets/images/index_guaranteed-payment.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 50%;
+  }
+}
+
+.background-aumenta-vendite {
+  background-image: url($baseurl + "/assets/images/index/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

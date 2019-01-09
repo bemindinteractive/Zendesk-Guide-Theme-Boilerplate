@@ -1,0 +1,71 @@
+/**
+Add the class "wrapped-component" to the parent section, then insert a <div class="wrap"> inside, and put everything inside this div.
+*/
+.o-wrapper {
+  margin-left: $base-spacing-x4;
+  margin-right: $base-spacing-x4;
+}
+
+@media screen and (break(medium)) {
+  .o-wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.wrapped-component {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (break(medium)) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 $base-spacing-x2;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    //justify-content: center;
+    @media screen and (break(medium)) {
+      flex-direction: row;
+      width: 100%;
+      max-width: $wrapper-max-width;
+    }
+    @media screen and (break(large)) {
+      &.max-width {
+        width: $wrapper-max-width;
+      }
+    }
+    &.wrap-flex-start {
+      align-items: center;
+      @media screen and (break(medium)) {
+        align-items: flex-start;
+      }
+    }
+
+    &.wrap-flex-end {
+      align-items: center;
+      @media screen and (break(medium)) {
+        align-items: flex-end;
+      }
+    }
+
+    &.center-content {
+      justify-content: center;
+    }
+
+    .msie & {
+      height: 100%;
+    }
+
+    &.with-flow-wrap {
+      flex-wrap: wrap;
+    }
+
+    &.wrap-row {
+      flex-direction: column;
+    }
+  }
+}

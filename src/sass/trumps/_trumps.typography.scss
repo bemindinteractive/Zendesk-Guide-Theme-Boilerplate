@@ -1,0 +1,47 @@
+.t-align-left{
+  text-align: left;
+}
+.t-align-right,{
+  text-align: right;
+}
+.t-align-center, .text-align-center{
+  text-align: center;
+}
+.t-uppercase {
+  text-transform: uppercase;
+}
+.t-bold {
+  font-weight: bold;
+}
+.t-italics {
+  font-style: italic;
+}
+
+/* Links */
+a.link{
+  color: color($accent, default);
+  font-weight: 500;
+  position: relative;
+}
+a.link-noarrow{
+  color: color($accent, default);
+  font-weight: 500;
+  position: relative;
+}
+a.link:after{
+  content: url("../assets/images/Arrow-lightblue-small.svg");
+  position: absolute;
+  right: -28px;
+  padding-left: 28px;
+  transition: all .2s cubic-bezier(.08, .705, .005, .99);
+}
+a.link:hover:after{
+  right: -38px;
+}
+a.link-easy{
+  color: color($accent, default);
+  font-size: 14px;
+  letter-spacing: .8px;
+  font-weight: 500;
+  line-height: 34px;
+}

@@ -1,0 +1,18 @@
+
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Basics links
+// Last update: 23/03/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+a {
+  text-decoration: none;
+  transition: all 300ms;
+  display: inline-block;
+  color: color($primary, default);
+
+  &:hover,
+  &:focus {
+    color: color($primary, dark);
+    text-decoration: none;
+  }
+}

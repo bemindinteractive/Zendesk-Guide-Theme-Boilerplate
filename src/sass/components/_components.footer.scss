@@ -1,0 +1,21 @@
+.prefooter{
+  margin-top: $spacing-big;
+  margin-bottom: $spacing-big;
+}
+.prefooter .row .col-md-12{
+  border-top: 1px solid #D1D9DF;
+  padding-top: 130px;
+  text-align: center;
+}
+.prefooter .row .col-md-12 .button{
+}
+
+footer{
+}
+
+footer a.link-easy:hover{
+  transition: all .2s ease-out;
+}
+footer a.link-easy:hover{
+  color: #0B46A9;
+}

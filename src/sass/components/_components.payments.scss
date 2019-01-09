@@ -1,0 +1,135 @@
+
+/* payments */
+.payments-intro-image{
+  background-image: url("../img/payments-intro-image.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-delay: 1.4s;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.08, .705, .005, .99);
+}
+.payments-intro{
+  margin-top: 170px;
+  margin-bottom: 180px;
+}
+.payments-intro h1{
+  line-height: 50px;
+  margin-bottom: 80px;
+}
+.api-example{
+  margin-bottom: 180px;
+}
+.grey-code{
+  background-color: #F6F8FA;
+  padding: 46px 40px 46px 40px;
+}
+.grey-code img{
+  width: 100%;
+}
+.api-example-article{
+  padding: 46px 0 46px 0;
+}
+.api-example-article h3{
+  margin-bottom: 24px;
+}
+.explore-platform{
+  margin-bottom: 50px;
+}
+.explore-platform h3{
+  margin-bottom: 24px;
+}
+.explore-platform .h2container h2{
+  margin-bottom: 8px;
+}
+/*.explore-platformtitle{
+  margin-bottom: 70px;
+}*/
+/*.explore-platformtitle .h2container{
+  margin-bottom: 64px;
+}*/
+/*.explore-platformtitle .h2container h2{
+  margin-bottom: 0px;
+  position: relative;
+  //height: 48px;
+}*/
+.explore-platformtitle .h2container h2 span{
+  //position: absolute;
+  overflow: hidden;
+}
+.api-platform{
+  margin-bottom: 130px;
+}
+.wrapper-line--api-card{
+  padding: 40px 30px 0 30px;
+  border-bottom: 0px;
+  border-radius: 4px 4px 0px 0px;
+}
+.wrapper-line--api-card h6{
+  margin-bottom: 6px;
+}
+.wrapper-line--api-card h6.sub-heading{
+  margin-bottom: 28px;
+}
+.wrapper-line--api-card .wrapper-title{
+  text-transform: initial;
+}
+.card-button{
+  background-color: #EEF2F5;
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #DAE1E6;
+  border-top: 0;
+  letter-spacing: .9px;
+}
+.card-button p{
+  font-size: 16px;
+  color: #00A9E0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+.wrapper-line--api-card p{
+  font-size: 14px;
+  color:#606E78;
+  line-height: 22px;
+  margin-bottom: 0;
+  position: relative;
+}
+.wrapper-line--api-card p.description:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+83 */
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 83%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 83%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 83%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.wrapper-line--api-card p.card-image-logo{
+  margin-bottom: 30px;
+  height: 65px;
+  position: relative;
+}
+.wrapper-line--api-card p.card-image-logo img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper-line--platform .button-circle{
+  margin: 40px auto 0px auto;
+}
+.api-platform .link{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}

@@ -1,0 +1,74 @@
+.banks-intro{
+  margin-top: $spacing-big;
+  margin-bottom: $spacing-big;
+}
+.banks-intro h6{
+  overflow: hidden;
+  position: relative;
+  height: 19px;
+}
+.banks-intro h6 span{
+  position: absolute;
+}
+.banks-intro{
+  margin-top: 170px;
+  margin-bottom: 180px;
+}
+.banks-intro h1{
+  margin-bottom: 80px;
+  position: relative;
+}
+.banks-intro div{
+  overflow: hidden;
+}
+.psd2-intro h1{
+  line-height: 50px;
+  margin-bottom: 80px;
+  position: relative;
+  height: 66px;
+}
+.banks-intro h1 span{
+  //position: absolute;
+}
+.banks-single-sections .flexbox .bank-image-blocksec{
+  //padding-top: 80px;
+  //padding-bottom: 80px;
+}
+.banks-intro-image{
+  background-image: url("../assets/images/banks.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.psd2-intro-image{
+  background-image: url("../assets/images/psd2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fintechs-intro-image{
+  background-image: url("../assets/images/fintechs.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.corporates-intro-image{
+  background-image: url("../assets/images/corporates.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banks-potential-title{
+  //margin-bottom: $spacing-big;
+}
+.banks-single-sections article.row{
+  padding-top: $spacing-big;
+}
+.banks-single-sections article.row .double-article {
+  margin-bottom: 0px;
+}
+.bank-last-row{
+  padding-bottom: 0px !important;
+  margin-bottom: 230px !important;
+  border-bottom: 0px #ffffff solid !important;
+}

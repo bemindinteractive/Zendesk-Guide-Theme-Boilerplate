@@ -1,0 +1,74 @@
+
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Basics form inputs
+// Last update: 30/03/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+input[type] {
+  // Default placeholder color
+  &::-webkit-input-placeholder {
+    color: color($base, lighter);
+  }
+  &:-moz-placeholder, &::-moz-placeholder {
+    color: color($base, lighter);
+  }
+  &:-ms-input-placeholder {
+    color: color($base, lighter);
+  }
+}
+
+/* No iphone and safari border radius */
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* No input highlight */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+form input[type="email"]{
+  border: 0px solid #ffffff;
+  border-bottom: 1px solid #D1D9DF;
+  color: #2E2D2C;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1.06px;
+  padding: 22px 25px;
+  float: left;
+}
+form input[type="email"]::placeholder{
+  color: #606E78;
+}
+form input[type="submit"]{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid #fff;
+  border-bottom: 1px solid #D1D9DF;
+  padding: 24px 25px 23px 25px;
+  float: left;
+  background-image: url("../assets/images/Arrow-grey-medium.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Media Queries*/
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+	form input[type="submit"] {
+		padding: 24px 10px 23px 10px;
+	}
+	form input[type="email"] {
+		padding: 22px 0px 22px 0px;
+	}
+}

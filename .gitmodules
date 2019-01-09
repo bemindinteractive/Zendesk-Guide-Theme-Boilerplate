@@ -1,0 +1,3 @@
+[submodule "src/_sass"]
+	path = src/_sass
+	url = https://github.com/bemindinteractive/fabrick-style.git

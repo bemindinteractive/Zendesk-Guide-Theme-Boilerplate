@@ -1,0 +1,210 @@
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Basics headings
+// Last update: 23/03/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+%heading-rules {
+  line-height: $line-height-small;
+  color: color($primary, default);
+}
+
+html {
+	font-size: $font-size-base;
+}
+
+h1 {
+  @extend %heading-rules;
+  @media screen and (break(medium)) {
+    font-size: $font-size-huge;
+    font-weight: $font-weight-bold;
+  }
+  width: 100%;
+  color: color($primary, default);
+}
+
+h2 {
+  @extend %heading-rules;
+  font-size: $font-size-xlarge;
+  font-weight: $font-weight-book;
+  letter-spacing: 1px;
+  color: color($primary, default);
+
+  margin-bottom: $spacing-normal;
+  line-height: 52px;
+}
+
+h3 {
+  @extend %heading-rules;
+  font-size: $font-size-medium;
+  letter-spacing: .8px;
+  color: color($primary, default);
+}
+
+h4 {
+  @extend %heading-rules;
+  font-size: $font-size-medium;
+}
+
+h5 {
+  @extend %heading-rules;
+  font-size: $font-size-base;
+}
+
+h6 {
+  @extend %heading-rules;
+  font-size: $font-size-base;
+
+  letter-spacing: 1.78px;
+  color: color($base, light);
+  text-transform: uppercase;
+  margin-bottom: $spacing-small;
+}
+
+p {
+  font-weight: $font-weight-normal;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  letter-spacing: 1.2;
+  color: color($base, default);
+  width: 100%;
+  margin-bottom: $base-spacing-x4;
+
+  // @media screen and (break(large)) {
+  //   font-size: $font-size-medium;
+  //   line-height: 1.4;
+  //   width: 100%;
+  // }
+}
+
+p.bigger-p{
+  font-weight: normal;
+  font-size: $font-size-medium;
+  letter-spacing: 1.2px;
+  color: color($base, dark);
+  margin-bottom: $base-spacing-x4;
+}
+
+p.big{
+  font-size: $font-size-medium;
+  color: color($base, default);
+}
+
+small {
+  font-size: $font-size-xxsmall;
+  color: color($midnight, dark);
+  font-weight: $font-weight-medium;
+}
+
+label {
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+  letter-spacing: 1.2;
+  font-size: $font-size-small;
+  color: color($midnight, default);
+
+  @media screen and (break(large)) {
+    font-size: $font-size-base;
+    line-height: 1.4;
+  }
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul.standard{
+  list-style-type: disc;
+}
+
+li {
+  font-weight: $font-weight-light;
+  font-size: $font-size-small;
+  line-height: 32px;
+  letter-spacing: 1.2;
+  color: color($midnight, default);
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+}
+
+q {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 1.2;
+  font-size: $font-size-base;
+  color: color($midnight, lightest);
+
+  @media screen and (break(large)) {
+    font-size: $font-size-medium;
+    line-height: 1.4;
+  }
+}
+
+cite {
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 1.2;
+  font-size: $font-size-base;
+  color: color($midnight, lightest);
+  margin-top: $base-spacing-x4;
+
+  @media screen and (break(large)) {
+    font-size: $font-size-base;
+    line-height: 1.4;
+  }
+}
+
+pre {
+  font-family: Source Code Pro, monospace;
+  display: block;
+  margin: 8px 0 24px 0;
+  font-size: $font-size-small;
+  line-height: 1.5;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+  background: color($midnight, lightest);
+  padding: $base-spacing-x2;
+}
+
+code {
+  color: color($base, darkest);
+  background: color($midnight, lightest);
+  font-family: Source Code Pro, monospace;
+  font-weight: 500;
+  font-size: $font-size-small;
+  line-height: 2;
+  padding: 0;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* TODO fix format */
+h6.wrapper-title{
+  font-size: 18px;
+  letter-spacing: .53px;
+  color: #606E78;
+}
+h6.sub-heading{
+  font-weight: normal;
+  letter-spacing: initial;
+  text-transform: initial;
+}
+.bold{
+  font-weight: bold;
+}
+section p.blue{
+  color: #0046AD;
+}
+.h7{
+  font-size: 16px;
+  color: #9BB3C5;
+}

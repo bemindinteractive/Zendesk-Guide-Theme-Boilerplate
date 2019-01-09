@@ -1,0 +1,157 @@
+
+/* platform */
+.platform-intro{
+  /*margin: 100px 0 60px 0;
+  /*-webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  animation-delay: .8s;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;*/
+  margin: 100px auto 60px auto;
+}
+.platform-intro h1{
+  //overflow: hidden;
+  position: relative;
+  //height: 86px;
+}
+.platform-intro h1 span{
+  //position: absolute;
+}
+.platform-intro-title h1{
+  overflow: hidden;
+  position: relative;
+  height: 86px;
+}
+.platform-intro-title h1 span{
+  //position: absolute;
+}
+/*.platform-intro-image{
+  background-image: url("../assets/images/header1G.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 32%;
+  margin-bottom: 70px;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-delay: 1.4s;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.08, .705, .005, .99);
+}*/
+
+.PSD2gateway-intro-image{
+  background-image: url("../assets/images/schema@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 32%;
+  margin-bottom: 70px;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-delay: 1.4s;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.08, .705, .005, .99);
+}
+.platform-description{
+  margin-bottom: 130px;
+}
+.howdoesitworks{
+  margin-bottom: 50px;
+}
+.howdoesitworks .h6container{
+  margin-bottom: 20px;
+}
+.howdoesitworks .h6container h6{
+  margin-bottom: 0px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+}
+.howdoesitworks .h6container h6 span{
+  position: absolute;
+}
+.howdoesitworks .h2container{
+  margin-bottom: 64px;
+}
+.howdoesitworks .h2container h2{
+  margin-bottom: 0px;
+  position: relative;
+  height: 48px;
+  overflow: hidden;
+}
+.howdoesitworks .h2container h2 span{
+  position: absolute;
+}
+.flash-bullet{
+  background-color: #EEF2F5;
+  height: 48px;
+  width: 48px;
+  border-radius: 25px;
+  background-image: url("../assets/images/flash.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 26px;
+}
+.bullet-block{
+  margin-bottom: 40px;
+}
+.howdoesitworks h3{
+  margin-bottom: 24px;
+}
+.howdoesitworks .h2container h2{
+  margin-bottom: 8px;
+}
+.howdoesitworkstitle{
+  margin-bottom: 70px;
+}
+.wrapper-line--platform{
+  padding: 80px 50px 80px 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.flex-center{
+  align-self: center;
+}
+.platform-api-wrapper h6{
+  margin-bottom: 40px;
+}
+.platform-solutions{
+  margin-bottom: 130px;
+}
+.platform-mid-illustration{
+  margin-bottom: 120px;
+  padding-top: 28%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/header3G.svg");
+}
+.platform-api > article{
+  padding: 30px 0 55px 0;
+}
+.platform-api > article h2{
+  margin-bottom: 48px;
+}
+.platform-api > article p{
+  margin-bottom: 70px;
+}
+.brandwall-platform{
+  margin-bottom: 100px;
+  padding-top: 7.5%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/brandwall-portfolio.svg");
+}
+.divider-bar-vertical{
+  width: 1px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #D1D9DF;
+}
+.platform-api{
+  margin-bottom: 130px;
+}

@@ -1,0 +1,61 @@
+
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Trump: Spacing and margins
+// Last update: 31/03/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+
+.t-no-top-margin {
+  margin-top: 0;
+}
+
+
+.t-no-bottom-margin {
+  margin-bottom: 0;
+}
+
+
+.t-no-left-margin {
+  margin-left: 0;
+}
+
+
+.t-no-right-margin {
+  margin-right: 0;
+}
+
+
+.t-no-y-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.t-no-x-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.t-no-y-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+.t-no-x-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.t-padding-top-x15 {
+padding-top: $base-spacing-x15;
+}
+
+.t-margin-top-bottom-x10 {
+  margin-top: $base-spacing-x10;
+  margin-bottom: $base-spacing-x10;
+}
+
+.t-margin-up-down-x2 {
+  margin: $base-spacing-x2 0;
+}

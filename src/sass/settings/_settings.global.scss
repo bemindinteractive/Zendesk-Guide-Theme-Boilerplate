@@ -1,0 +1,60 @@
+
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Commons settings and configurations
+// Last update: 23/03/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+
+// Layout settings
+
+  $wrapper-max-width: 1220px;
+
+  $base-spacing-unit: 1rem;
+
+	$base-spacing    : $base-spacing-unit / 2;  //8px
+  $base-spacing-x2 : $base-spacing * 2;       //16px
+  $base-spacing-x3 : $base-spacing * 3;       //24px
+  $base-spacing-x4 : $base-spacing * 4;       //32px
+  $base-spacing-x5 : $base-spacing * 5;       //40px
+  $base-spacing-x6 : $base-spacing * 6;       //48px
+	$base-spacing-x7 : $base-spacing * 7;       //56px
+	$base-spacing-x8 : $base-spacing * 8;       //64px
+	$base-spacing-x9 : $base-spacing * 9;       //72px
+	$base-spacing-x10 : $base-spacing * 10;     //80px
+	$base-spacing-x11 : $base-spacing * 11;     //88px
+  $base-spacing-x12 : $base-spacing * 12;     //96px
+  $base-spacing-x15 : $base-spacing * 15;     //120px
+	$base-spacing-x20 : $base-spacing * 20;     //160px
+
+  $spacing-small: $base-spacing-x3;           //24px
+  $spacing-normal: $base-spacing-x10;         //80px
+  $spacing-big: $base-spacing-x20;            //160px
+
+// Debug flags
+
+  $use-helper-mediaqueries: false;
+
+
+// Responsive settings
+
+  $breakpoints: (
+    extraSmall : 30em,
+    small      : 48em,
+    medium     : 60em,
+    large      : 80em,
+    extraLarge : 90em
+  );
+
+  $densities: (
+    1x  : '96dpi',
+    15x : '144dpi',
+    2x  : '192dpi',
+    3x  : '288dpi'
+  );
+
+
+// Grid settings
+
+  $grid-columns     : 12;
+  $grid-use-gutters : true;
+  $grid-gutter      : $base-spacing-x3;

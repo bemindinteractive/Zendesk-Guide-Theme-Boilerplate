@@ -1,0 +1,336 @@
+header{
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  transform: translateX(-50%);
+
+  transition: all .6s ease;
+  -webkit-animation-name: fadeInDownTop;
+  animation-name: fadeInDownTop;
+  animation-delay: .4s;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.41, 0, 0.07, 1);
+}
+.nav-up {
+  top: -86px !important;
+}
+.nav-down {
+  top: 0px;
+}
+.logo-header{
+  float: left;
+  padding: 21px 0 22px 0;
+}
+.logo-header img{
+  /*width: 106px;*/
+}
+.mobile-menu-list{
+
+}
+.menu-header .logo-header img{
+  width: 110px;
+}
+.menu-header{
+  float: left;
+  padding-top: 26px;
+  padding-bottom: 22px;
+}
+.menu-header ul li{
+  float: left;
+  font-weight: 800;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .8px;
+  -webkit-letter-spacing: .8px;
+  color: color($base, light);;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: all .2s ease-out;
+  cursor: pointer;
+}
+.menu-header ul li a{
+  color: color($base, light);;
+  transition: all .2s ease-out;
+}
+.menu-header ul li:first-child{
+  margin-left: 0px;
+}
+.menu-header ul li:last-child{
+  margin-right: 0px;
+}
+.menu-header ul li a:hover{
+  color: #0B46A9;
+}
+.menu-header ul li a.flag{
+  color: #0B46A9;
+}
+.menu-header > ul > li.sub-menu-trigger:after{
+  content: url(../assets/images/chevron-mobile.svg);
+  position: absolute;
+  right: -14px;
+  top: -2px;
+}
+.menu-header > ul > li.sub-menu-trigger.flag:after{
+  content: url(../assets/images/chevron-mobile-flag.svg) !important;
+}
+.menu-header > ul > li.sub-menu-trigger{
+  margin-right: 21px;
+  -webkit-perspective: 933px;
+  perspective: 933px;
+}
+.menu-header-list{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 439px;
+}
+.sub-menu-trigger{
+  position: relative;
+
+}
+.sub-menu-trigger .sub-menu-header{
+  position: absolute;
+  top: $base-spacing-x3;
+  left: 0;
+  background-color: #fff;
+  padding: 0 $base-spacing-x5 $base-spacing-x5 $base-spacing-x5;
+  box-shadow: rgba(0, 0, 0, .2) 0px 2px 4px;
+  border-radius: 4px;
+  -webkit-transform-style: preserve-3d; /* Safari 3-8  */
+  -webkit-transform: rotateX(23deg); /* Safari 3-8  */
+  transform-style: preserve-3d;
+  transform: rotateX(23deg);
+  -webkit-will-change: transform;
+  will-change: transform;
+  transition: transform .3s, opacity .3s, visibility .3s;
+  opacity: 0;
+  visibility: hidden;
+  transform-origin: top left;
+}
+.sub-menu-header ul{
+  padding-inline-start: 0px;
+  min-width: 320px;
+}
+
+.sub-menu-header__item {
+  position: relative;
+  padding-left: $base-spacing-x4;
+
+  &--master {
+    a{
+      margin-top: $base-spacing-x5;
+      font-size: $font-size-base;
+      font-weight: $font-weight-medium;
+    }
+    &:before{
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+    }
+  }
+
+  &--bank{
+    &:before{
+      content: url(../assets/images/bank.svg);
+    }
+  }
+
+  &--fintechs{
+    &:before{
+      content: url(../assets/images/mobile-phone.svg);
+    }
+  }
+
+  &--corporates{
+    &:before{
+      content: url(../assets/images/hotel.svg);
+    }
+  }
+
+  &--slave a{
+    font-size: $font-size-xsmall;
+    font-weight: $font-weight-book;
+
+    &:after{
+      content: url(../assets/images/small-right.svg);
+      transform: scale(0.6);
+      position: absolute;
+      right: -16px;
+      top: 3px;
+    }
+  }
+}
+
+
+
+
+.sub-menu-header ul li{
+
+}
+.sub-menu-trigger .sub-menu-header.openclass{
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+.sub-menu-trigger .sub-menu-header ul li{
+  margin: 0;
+  //padding: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform .15s, opacity .15s, visibility .15s;;
+}
+.sub-menu-trigger .sub-menu-header.openclass ul li{
+  visibility: visible;
+  opacity: 1;
+}
+.sub-menu-trigger .sub-menu-header ul li{
+  float: none;
+}
+
+.user-header{
+  float: left;
+  padding: 26px 0 22px 0;
+}
+.user-header ul li{
+  float: right;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .8px;
+  color: color($base, light);
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: all .2s cubic-bezier(0.6, 0.2, 0.1, 1);
+  cursor: pointer;
+}
+.user-header ul li a{
+  color: color($base, light);
+  transition: all .2s cubic-bezier(0.6, 0.2, 0.1, 1);
+}
+.user-header ul li a:hover{
+  color: color($primary, dark);
+}
+.user-header ul li:first-child{
+  margin-right: 0px;
+}
+.user-header ul li:last-child{
+  margin-left: 0px;
+}
+.user-header ul li.highlight a{
+  color: color($primary, default);
+}
+.user-header ul li.highlight a:hover{
+  color: color($primary, dark);
+}
+
+.burger-menu{
+  display: none;
+  cursor: pointer;
+}
+.mobile-menu-list{
+  display: none;
+}
+
+@media only screen and (max-width : 992px) {
+  .burger-menu{
+    display: inline;
+  }
+  .mobile-menu-list{
+    display: none;
+  }
+  #user-header{
+    display: none;
+  }
+  #menu-header{
+    display: none;
+  }
+  .logo-header{
+    z-index: 99;
+  }
+  .burger-menu{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  .burger-menu li{
+    text-align: center;
+  }
+  #user-header li{
+    text-align: center;
+  }
+  .divider{
+    border-bottom: 1px solid #D1D9DF;
+  }
+  .under-menu-mobile ul {
+    padding-inline-start: 40px;
+  }
+  .under-menu-mobile ul li{
+    padding-left: 0px;
+  }
+  .under-menu-mobile ul li{
+    color: #9BB3C5;
+  }
+  .open{
+    display: inline !important;
+  }
+  .x-vision{
+    z-index: 99;
+  }
+  .mobile-menu-list > ul{
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    padding-inline-start: 0px;
+    padding: 0px;
+    padding-top: 90px;
+  }
+  .mobile-menu-list ul{
+    padding-inline-start: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .mobile-menu-list ul li{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #9BB3C5;
+    font-size: 20px;
+  }
+  .mobile-menu-list ul a{
+    color: #9BB3C5;
+    font-weight: bold;
+  }
+  .under-menu-mobile{
+    height: 0;
+    overflow: hidden;
+    margin: 0 !important;
+  }
+  .under-menu-mobile-open{
+    height: auto;
+  }
+  .under-menu-mobile li a{
+    font-size: 16px;
+  }
+  .under-menu-mobile li{
+    margin-bottom: 10px !important;
+  }
+  .under-menu-mobile li:last-child{
+    margin-bottom: 30px !important;
+  }
+  .trigger-under-menu-mobile a{
+    position: relative;
+  }
+  .trigger-under-menu-mobile a:after{
+    content: url('../img/chevron-mobile.svg');
+    position: absolute;
+    right: -20px;
+    top: -6px;
+  }
+}

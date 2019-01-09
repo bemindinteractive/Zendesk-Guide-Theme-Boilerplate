@@ -3,7 +3,13 @@
   "author": "Bemind Interactive",
   "version": "1.0.0",
   "api_version": 1,
-  "default_locale": "it",
+  "defaultLocale": "it",
+  "frameworkVersion": "2.0",
+  "location": {
+    "support": {
+      "ticket_sidebar": "https://fabrick.zendesk.com"
+    }
+  },
   "settings": [
     {
       "label": "colors_group_label",

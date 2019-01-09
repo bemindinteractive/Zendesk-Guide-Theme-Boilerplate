@@ -1,0 +1,46 @@
+
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Color palette
+// Last update: 23/03/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+
+$primary: (
+  darkest  : #000,
+  darker   : #000,
+  dark     : #0B46A9,
+  default  : #0046AD,
+  light    : #fff,
+  lighter  : #fff,
+  lightest : #fff
+);
+
+$base: (
+  darkest  : #000,
+  darker   : #000,
+  dark     : #606E78,
+  default  : #2E2D2C,
+  light    : #9BB3C5,
+  lighter  : #DAE1E6,
+  lightest : #fff
+);
+
+$accent: (
+  darker   : #000,
+  dark     : #000,
+  default  : #00A9E0,
+  light    : #fff,
+  lighter  : #fff,
+  lightest : #fff
+);
+
+$midnight: (
+  darker   : #222222,
+  dark     : #404040,
+  default  : #515165,
+  light    : #454545,
+  lighter  : #8F989B,
+  lightest : #F9FAFC
+);
+
+$white: white;
