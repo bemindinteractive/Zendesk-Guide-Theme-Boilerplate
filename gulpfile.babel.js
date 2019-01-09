@@ -61,6 +61,7 @@ gulp.task('zip', function() {
 
 gulp.task('watch', () => {
     gulp.watch('./src/templates/*.hbs', ['build-templates']);
+    gulp.watch('./src/style/**/*.scss', ['build-sass']);
     gulp.watch('./src/sass/**/*.scss', ['build-sass']);
     gulp.watch('./src/js/**', ['build-js'])
 });
@@ -68,7 +69,7 @@ gulp.task('watch', () => {
 gulp.task('build', ['build-sass', 'build-templates', 'build-js']);
 
 gulp.task('build-sass', () => {
-    return gulp.src('./src/sass/style.scss')
+    return gulp.src('./src/style/style.scss')
         .pipe(sourcemaps.init())
         .pipe(sassVars(config, { verbose: false }))
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))

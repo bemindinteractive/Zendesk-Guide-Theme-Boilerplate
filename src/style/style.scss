@@ -1,0 +1,140 @@
+/* ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+
+This is project follows the Inverted Triangle CSS (ITCSS)
+organizational structure created by Harry Roberts.
+
+The organization is from low to high specifity
+and aims to create more scalable, modular, and structured css
+
+The inverted triangle:
+
+                   ________________
+    Settings       |______________|       Least Specific
+       Tools        |____________|
+     Generic         |__________|              |
+    Elements          |________|               |
+     Objects           |______|                |
+  Components            |____|
+      Trumps             |__|             Most Specific
+
+
+Settings ---- Global variables, config switches.
+Tools ------- Default mixins and functions.
+Generic ----- Ground-zero styles (Normalize.css, resets, box-sizing).
+Elements ---- Unclassed HTML elements (type selectors).
+Objects ----- Cosmetic-free design patterns.
+Components -- Designed components, chunks of UI.
+Trumps ------ Helpers and overrides.
+
+↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥ */
+
+@charset "UTF-8";
+/*
+  DEPENDENCIES
+  (eg. Fonts, Grid system)
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900italic,900,700italic,700,400italic,300italic,300,100italic,100");
+
+/*
+  SETTINGS
+  Globally-available settings.
+  Config switches.
+  Brand colours, etc.
+*/
+
+@import
+"../sass/settings/settings.legacy",
+"../sass/settings/settings.typography",
+"../sass/settings/settings.fontface",
+"../sass/settings/settings.global",
+"../sass/settings/settings.colors",
+"../sass/settings/settings.animations";
+
+/*
+  TOOLS
+  Globally-available tools.
+  Public mixins.
+  Helper functions.
+*/
+
+@import
+"../sass/tools/tools.grid",
+"../sass/tools/tools.images",
+"../sass/tools/tools.functions",
+"../sass/tools/tools.mediaqueries",
+"../sass/tools/tools.clearfix";
+
+
+/* Vendor scss
+
+@import
+"vendor/slick",
+"vendor/slick.trust",
+"vendor/slick-theme",
+"vendor/_owl.carousel";
+  */
+/*
+  GENERIC
+  Ground zero styles.
+  Low-specificity, far-reaching.
+  Resets, Normalize.css, etc.
+
+@import
+"generics/generic.normalize";
+*/
+/*
+  ELEMENTS
+  Unclassed HTML elements.
+  H1–H6, basic links, lists, etc.
+  Last layer we see type selectors (e.g. a {}, blockquote {}).
+*/
+@import
+"../sass/basics/basics.pages",
+"../sass/basics/basics.typography",
+"../sass/basics/basics.links",
+"../sass/basics/basics.separator",
+"../sass/basics/basics.inputs";
+
+/*
+  OBJECTS
+  OOCSS.
+  Design patterns.
+  No cosmetics.
+  Begin using classes exclusively.
+  Agnostically named (e.g. .ui-list{}).
+*/
+@import
+//"objects/objects.content-section",
+//"objects/objects.logo-sella",
+//"objects/objects.wrapper",
+"../sass/objects/objects.wrapper";
+
+/*
+  COMPONENTS
+  Designed pieces of UI.
+  Still only using classes.
+  More explicitly named (e.g. .products-list {}).
+*/
+@import
+"../sass/components/components.about",
+"../sass/components/components.footer",
+"../sass/components/components.form",
+"../sass/components/components.home",
+"../sass/components/components.navigation",
+"../sass/components/components.offer",
+"../sass/components/components.payments",
+"../sass/components/components.platform",
+"../sass/components/components.preloader",
+"../sass/components/components.press";
+
+/*
+  DONALD TRUMPS
+  Overrides, helpers, utilities.
+  Only affect one piece of the DOM at a time.
+  Usually carry !important.
+*/
+@import
+"../sass/trumps/trumps.typography",
+"../sass/trumps/trumps.fadein";/*
+"trumps/trumps.spacing",
+"trumps/trumps.popup";*/
